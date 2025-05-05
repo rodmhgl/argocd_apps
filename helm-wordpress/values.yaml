@@ -504,11 +504,11 @@ readinessProbe:
     ##   value: https
     ##
     httpHeaders: []
-  initialDelaySeconds: 30
-  periodSeconds: 10
-  timeoutSeconds: 5
-  failureThreshold: 6
-  successThreshold: 1
+  # initialDelaySeconds: 30
+  # periodSeconds: 10
+  # timeoutSeconds: 5
+  # failureThreshold: 6
+  # successThreshold: 1
 ## @param startupProbe.enabled Enable startupProbe on WordPress containers
 ## @skip startupProbe.httpGet
 ## @param startupProbe.initialDelaySeconds Initial delay seconds for startupProbe
@@ -1251,12 +1251,12 @@ mariadb:
   ## MariaDB Primary configuration
   ##
   primary:
-    livenessProbe:
-      initialDelaySeconds: 480
-    readinessProbe:
-      initialDelaySeconds: 480
-    startupProbe:
-      initialDelaySeconds: 480
+    # livenessProbe:
+    #   initialDelaySeconds: 480
+    # readinessProbe:
+    #   initialDelaySeconds: 480
+    # startupProbe:
+    #   initialDelaySeconds: 480
     ## MariaDB Primary Persistence parameters
     ## ref: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
     ## @param mariadb.primary.persistence.enabled Enable persistence on MariaDB using PVC(s)
