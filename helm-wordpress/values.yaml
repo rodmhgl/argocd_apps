@@ -1251,6 +1251,12 @@ mariadb:
   ## MariaDB Primary configuration
   ##
   primary:
+    livenessProbe:
+      initialDelaySeconds: 480
+    readinessProbe:
+      initialDelaySeconds: 480
+    startupProbe:
+      initialDelaySeconds: 480
     ## MariaDB Primary Persistence parameters
     ## ref: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
     ## @param mariadb.primary.persistence.enabled Enable persistence on MariaDB using PVC(s)
